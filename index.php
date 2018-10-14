@@ -42,6 +42,10 @@
         <li class="nav-item">
           <a class="nav-link" href="https://www.linkedin.com/in/GPNgondo">Linkedin</a>
         </li>
+
+         <li class="nav-item">
+          <a class="nav-link" href="View/admin.php">Admin</a>
+        </li>
         
         <li class="nav-item">
           <a class="nav-link" href="page-contact.html">Contact</a>
