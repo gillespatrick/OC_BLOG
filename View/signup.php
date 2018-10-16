@@ -21,7 +21,7 @@
             
           </div>
           <div class="col-4 text-center">
-            <a class="blog-header-logo text-dark" href="">Gilles Patrick</a>
+            <a class="blog-header-logo text-dark" href="../index.php">Gilles Patrick</a>
           </div>
           <div class="col-4 d-flex justify-content-end align-items-center">
             <a class="text-muted" href="#">
@@ -45,8 +45,12 @@
       </div>
       <button class="btn btn-lg btn-primary btn-success" type="submit">Sign in</button>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <p class="mt-5 mb-3 text-muted">&copy; 2018</p>
 =======
+=======
+      <a href="forgot.php" class="text-success">Forgot your password?</a>
+>>>>>>> forgot_password
       <p class="mt-5 mb-3 text-muted">&copy;Gilles Patrick  2018</p>
 >>>>>>> signup_user
     </form>
