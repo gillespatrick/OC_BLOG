@@ -44,7 +44,7 @@
         </label>
       </div>
       <button class="btn btn-lg btn-primary btn-success" type="submit">Sign in</button>
-      <p class="mt-5 mb-3 text-muted">&copy; 2018</p>
+      <p class="mt-5 mb-3 text-muted">&copy;Gilles Patrick  2018</p>
     </form>
         </div>
       </div>
