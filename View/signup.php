@@ -44,7 +44,7 @@
         </label>
       </div>
       <button class="btn btn-lg btn-primary btn-success" type="submit">Sign in</button>
-      <a href="forgot.php" class="text-success">Mot de passe oublié ?</a>
+      <a href="forgot.php" class="text-success">Forgot your password?</a>
       <p class="mt-5 mb-3 text-muted">&copy;Gilles Patrick  2018</p>
     </form>
         </div>
