@@ -14,7 +14,7 @@
 
 
     <!-- Custom styles for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylegit sheet">
     <link href="http://getbootstrap.com/docs/4.1/examples/blog/blog.css" rel="stylesheet">
   </head>
 
