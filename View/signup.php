@@ -21,7 +21,7 @@
             
           </div>
           <div class="col-4 text-center">
-            <a class="blog-header-logo text-dark" href="">Gilles Patrick</a>
+            <a class="blog-header-logo text-dark" href="../index.php">Gilles Patrick</a>
           </div>
           <div class="col-4 d-flex justify-content-end align-items-center">
             <a class="text-muted" href="#">
