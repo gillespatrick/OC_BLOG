@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <title>SIGN IN</title>
+    <title>Administrator</title>
      <!-- Bootstrap core CSS -->
      <link href="http://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -27,13 +27,13 @@
             <a class="text-muted" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
             </a>
-            <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+            
           </div>
         </div>
       </header> 
   
   <form class="form-signin">
-      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+      <h1 class="h3 mb-3 font-weight-normal"> Login and Password</h1>
       <label for="inputEmail" class="sr-only">Email address</label>
       <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
       <label for="inputPassword" class="sr-only">Password</label>
@@ -44,18 +44,11 @@
         </label>
       </div>
       <button class="btn btn-lg btn-primary btn-success" type="submit">Sign in</button>
-<<<<<<< HEAD
-      <p class="mt-5 mb-3 text-muted">&copy; 2018</p>
-=======
-      <p class="mt-5 mb-3 text-muted">&copy;Gilles Patrick  2018</p>
->>>>>>> signup_user
+      <p class="mt-5 mb-3 text-muted">&copy; Gilles Patrick 2018</p>
     </form>
         </div>
       </div>
     </div>
-<<<<<<< HEAD
-=======
     
->>>>>>> signup_user
   </body>
 </html>
