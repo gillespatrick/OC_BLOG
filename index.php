@@ -44,7 +44,7 @@
         </li>
 
          <li class="nav-item">
-          <a class="nav-link" href="View/admin.php">Admin</a>
+          <a class="nav-link" href="View/admin.php">Admin Page</a>
         </li>
         
         <li class="nav-item">
