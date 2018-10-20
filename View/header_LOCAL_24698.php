@@ -11,11 +11,7 @@
             <a class="text-muted" href="#">
               
             </a>
-<<<<<<< HEAD
             <a class="btn btn-sm btn-outline-secondary" href="View/signin_user.php">Sign in</a>
-=======
-            <a class="btn btn-sm btn-outline-secondary" href="View/signin.php">Sign in</a>
->>>>>>> open_account
           </div>
         </div>
       </header>

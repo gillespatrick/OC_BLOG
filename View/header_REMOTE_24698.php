@@ -11,11 +11,7 @@
             <a class="text-muted" href="#">
               
             </a>
-<<<<<<< HEAD
-            <a class="btn btn-sm btn-outline-secondary" href="View/signin_user.php">Sign in</a>
-=======
             <a class="btn btn-sm btn-outline-secondary" href="View/signin.php">Sign in</a>
->>>>>>> open_account
           </div>
         </div>
       </header>
@@ -23,7 +19,7 @@
       <div class="nav-scroller py-1 mb-2">
         <nav class="nav d-flex justify-content-between">
           
-          <a class="p-2 text-muted" href="../index.php">Home</a>
+          <a class="p-2 text-muted" href="/index.php">Home</a>
           <a class="p-2 text-muted" href="#">Categories</a>
           <a class="p-2 text-muted" href="#">Curriculum vitae</a>
           <a class="p-2 text-muted" href="#">Contact</a>
