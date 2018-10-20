@@ -11,7 +11,7 @@
             <a class="text-muted" href="#">
               
             </a>
-            <a class="btn btn-sm btn-outline-secondary" href="View/signup.php">Sign up</a>
+            <a class="btn btn-sm btn-outline-secondary" href="View/open_account.php">Sign up</a>
           </div>
         </div>
       </header>
