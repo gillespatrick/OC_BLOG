@@ -1,7 +1,17 @@
 <?php
-try {
-  $bdd = new PDO( 'mysql:host=localhost;dbname=blog', 'gilles', 'gillespatr9ck' );
-}
-catch ( PDOException $e ) {
-  die( 'Erreur : ' . $e->getMessage() );
-}
+  class Db {
+    private static $instance = NULL;
+
+    private function __construct() {}
+
+    private function __clone() {}
+
+    public static function getInstance() {
+      if (!isset(self::$instance)) {
+        $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
+        self::$instance = new PDO('mysql:host=localhost;dbname=blog', 'gilles', 'gillespatr9ck', $pdo_options);
+      }
+      return self::$instance;
+    }
+  }
+?>
