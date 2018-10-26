@@ -1,3 +1,10 @@
+<?php
+session_start();
+if ( isset( $_SESSION['id'] ) ) {
+  header( 'Location: profil_user.php' );
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
   <head>
