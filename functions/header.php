@@ -14,7 +14,7 @@
         <a class="nav-link" href="signup.php">SIGN UP</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="connexion.php">Connexion</a>
+        <a class="nav-link" href="signin.php">SIGN IN</a>
       </li>
       <?php endif; ?>
     </ul>
