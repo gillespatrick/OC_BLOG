@@ -11,7 +11,7 @@
       </li>
       <?php else : ?>
       <li class="nav-item">
-        <a class="nav-link" href="inscription.php">Inscription</a>
+        <a class="nav-link" href="signup.php">SIGN UP</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="connexion.php">Connexion</a>
