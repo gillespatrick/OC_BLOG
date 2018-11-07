@@ -74,7 +74,7 @@ if ( !empty( $_POST ) ) {
             <div class="alert alert-success"><?= $validation ?></div>
           <?php endif; ?>
           <form action="inscription.php" method="post" class="p-y-3 p-x-2" novalidate>
-            <input type="email" name="email" class="form-control" placeholder="Email Adsress" value="<?php if ( isset( $email ) ) echo $email ?>">
+            <input type="email" name="email" class="form-control" placeholder="Email Address" value="<?php if ( isset( $email ) ) echo $email ?>">
             <input type="password" name="password" class="form-control" placeholder="Password">
             <input type="password" name="passwordconf" class="form-control" placeholder="Password Confimation">
             <input type="submit" class="btn btn-success" value="Submit">
