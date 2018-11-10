@@ -42,7 +42,7 @@ if ( !empty( $_POST ) ) {
 
     unset( $email );
 
-    $validation = 'SUCCESS!';
+    $validation = 'SUCCESS  !';
   }
 }
 ?>g
