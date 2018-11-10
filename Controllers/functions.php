@@ -33,7 +33,7 @@ function bdd_delete( string $query, array $params = [] ) : int {
 }
 
 function bdd_insert( string $query, array $params = [] ) : int {
-  require 'pdo.php';
+  require '../Models/pdo.php';
 
   if ( $params ) {
     $req = $bdd->prepare( $query );
@@ -49,7 +49,7 @@ function bdd_insert( string $query, array $params = [] ) : int {
 }
 
 function bdd_select( string $query, array $params = [] ) {
-  require 'pdo.php';
+  require '../Models/pdo.php';
 
   if ( $params ) {
     $req = $bdd->prepare( $query );
