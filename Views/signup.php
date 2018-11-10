@@ -45,7 +45,7 @@ if ( !empty( $_POST ) ) {
     $validation = 'Inscription réussie !';
   }
 }
-?>
+?>g
 <!DOCTYPE html>
 <html lang="fr">
   <head>
