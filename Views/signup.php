@@ -77,7 +77,7 @@ if ( !empty( $_POST ) ) {
             <input type="email" name="email" class="form-control" placeholder="Adresse e-mail" value="<?php if ( isset( $email ) ) echo $email ?>">
             <input type="password" name="password" class="form-control" placeholder="Mot de passe">
             <input type="password" name="passwordconf" class="form-control" placeholder="Confirmez le mot de passe">
-            <input type="submit" class="btn btn-success" value="Inscription">
+            <input type="submit" class="btn btn-success" value="Sign up">
           </form>
         </div>
       </div>
