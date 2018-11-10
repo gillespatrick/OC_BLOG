@@ -42,7 +42,7 @@ if ( !empty( $_POST ) ) {
 
     unset( $email );
 
-    $validation = 'Inscription réussie !';
+    $validation = 'SUCCESS!';
   }
 }
 ?>g
@@ -73,10 +73,10 @@ if ( !empty( $_POST ) ) {
           <?php if ( isset( $validation ) ) : ?>
             <div class="alert alert-success"><?= $validation ?></div>
           <?php endif; ?>
-          <form action="inscription.php" method="post" class="p-y-3 p-x-2" novalidate>
-            <input type="email" name="email" class="form-control" placeholder="Adresse e-mail" value="<?php if ( isset( $email ) ) echo $email ?>">
-            <input type="password" name="password" class="form-control" placeholder="Mot de passe">
-            <input type="password" name="passwordconf" class="form-control" placeholder="Confirmez le mot de passe">
+          <form action="signup.php" method="post" class="p-y-3 p-x-2" novalidate>
+            <input type="email" name="email" class="form-control" placeholder="Email address" value="<?php if ( isset( $email ) ) echo $email ?>">
+            <input type="password" name="password" class="form-control" placeholder="Password">
+            <input type="password" name="passwordconf" class="form-control" placeholder="Password confirm">
             <input type="submit" class="btn btn-success" value="Sign up">
           </form>
         </div>
