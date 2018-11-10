@@ -8,7 +8,7 @@ if ( !empty( $_POST ) ) {
   extract( $_POST );
   $erreur = [];
 
-  require_once 'inc/functions.php';
+  require_once 'functions/functions.php';
 
   if ( empty( $email ) ) {
     $erreur['email'] = 'Adresse e-mail manquante';
@@ -50,7 +50,7 @@ if ( !empty( $_POST ) ) {
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <title>Create Account</title>
+    <title>SIGN UP</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,700,300">
     <link rel="stylesheet" href="css/style.css">
