@@ -4,17 +4,17 @@
     <ul class="nav navbar-nav pull-xs-right text-xs-center">
       <?php if ( isset( $_SESSION['id'] ) ) : ?>
       <li class="nav-item">
-        <a class="nav-link" href="account_user.php">ACCOUNT</a>
+        <a class="nav-link" href="Views/account_user.php">ACCOUNT</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="logout.php">LOG OUT</a>
+        <a class="nav-link" href="Views/logout.php">LOG OUT</a>
       </li>
       <?php else : ?>
       <li class="nav-item">
-        <a class="nav-link" href="signup.php">SIGN UP</a>
+        <a class="nav-link" href="Views/signup.php">SIGN UP</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="signin.php">SIGN IN</a>
+        <a class="nav-link" href="Views/signin.php">SIGN IN</a>
       </li>
       <?php endif; ?>
     </ul>
