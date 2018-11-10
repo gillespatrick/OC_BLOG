@@ -28,7 +28,7 @@ if ( !empty( $_POST ) ) {
   }
 
   if ( empty( $passwordconf ) ) {
-    $error['passwordconf'] = 'Confirmation du mot de passe manquante';
+    $error['passwordconf'] = 'Password confirmation missing';
   }
   elseif ( $passwordconf != $password ) {
     $error['passwordconf'] = 'Password confirmation';
