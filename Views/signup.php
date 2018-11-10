@@ -58,7 +58,7 @@ if ( !empty( $_POST ) ) {
   <body>
     <?php include 'inc/header.php' ?>
     <div class="container">
-      <h1 class="text-xs-center">Inscription</h1>
+      <h1 class="text-xs-center">SIGN UP</h1>
       <div class="row">
         <div class="col-xl-4 col-xl-offset-4 col-md-6 col-md-offset-3">
           <?php if ( isset( $error['email'] ) ) : ?>
