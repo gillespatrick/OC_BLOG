@@ -34,7 +34,7 @@ if ( !empty( $_POST ) ) {
     $error['passwordconf'] = 'Password confirmation';
   }
 
-  if ( !$erreur ) {
+  if ( !$error ) {
     bdd_insert( 'INSERT INTO user (email, password) VALUES (:email, :password)', [
       'email' => $email,
       'password' => password_hash( $password, PASSWORD_DEFAULT )
