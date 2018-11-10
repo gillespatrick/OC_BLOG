@@ -8,7 +8,7 @@ if ( !empty( $_POST ) ) {
   extract( $_POST );
   $error = [];
 
-  require_once 'inc/functions.php';
+  require_once '../Controllers/functions.php';
 
   if ( empty( $email ) ) {
     $error['email'] = 'Email address missing';
@@ -35,8 +35,8 @@ if ( !empty( $_POST ) ) {
   }
 
   if ( !$erreur ) {
-    bdd_insert( 'INSERT INTO membre (mail, password) VALUES (:mail, :password)', [
-      'mail' => $email,
+    bdd_insert( 'INSERT INTO user (email, password) VALUES (:email, :password)', [
+      'email' => $email,
       'password' => password_hash( $password, PASSWORD_DEFAULT )
     ] );
 
@@ -62,7 +62,7 @@ if ( !empty( $_POST ) ) {
       <div class="row">
         <div class="col-xl-4 col-xl-offset-4 col-md-6 col-md-offset-3">
           <?php if ( isset( $error['email'] ) ) : ?>
-            <div class="alert alert-danger"><?= $erreur['email'] ?></div>
+            <div class="alert alert-danger"><?= $error['email'] ?></div>
           <?php endif; ?>
           <?php if ( isset( $error['password'] ) ) : ?>
             <div class="alert alert-danger"><?= $error['password'] ?></div>
