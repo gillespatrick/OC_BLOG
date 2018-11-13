@@ -1,0 +1,10 @@
+{
+    "name": "Gilles Patrick",
+    "description": "My professionnal blog",
+    "require": {},
+
+    "autoload" : {
+        "psr-4" : {"Model\\" : "Model",
+                    "Controller\\" : "Controller"}
+    }
+}
