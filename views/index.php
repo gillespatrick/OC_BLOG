@@ -1,4 +1,6 @@
 <?php
+    session_start();
+   
     include 'header.php';
 ?>
 
@@ -76,7 +78,7 @@
     <!-- About Section -->
     <section class="bg-primary text-white mb-0" id="about">
       <div class="container">
-        <h2 class="text-center text-uppercase text-white">About</h2>
+        <h2 class="text-center text-uppercase text-white">About Me</h2>
         <hr class="star-light mb-5">
         <div class="row">
           <div class="col-lg-4 ml-auto">
@@ -89,7 +91,7 @@
         <div class="text-center mt-4">
           <a class="btn btn-xl btn-outline-light" href="#">
             <i class="fas fa-download mr-2"></i>
-            Download Now!
+            Download Resume
           </a>
         </div>
       </div>

@@ -1,9 +1,12 @@
 <?php
 
+require_once '../vendor/autoload.php';
+
+use models\Hydrate;
 
 
 
-class User 
+class User extends Hydrate
 {
     private $id;
     private $first_name;
@@ -58,7 +61,7 @@ class User
 
     public function setLast_name($last_name)
     {
-        if (is_string($firstName)) {
+        if (is_string($last_Name)) {
             $this -> last_name = $last_name;
         }
     }
@@ -67,17 +70,17 @@ class User
 
     public function setEmail($email)
     {
-        if (is_string($mail)) {
+        if (is_string($email)) {
             $this->email = $email;
         }
     }
 
    
 
-   /* public function setPassword($password)
+    public function setPassword($password)
     {
         $this->password = password_hash($password, PASSWORD_DEFAULT);
-    }*/
+    }
 
 
     
