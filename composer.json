@@ -1,0 +1,10 @@
+{
+    "name": "Gilles Patrick",
+    "description": "Web developper Blog MVC",
+    "require": {},
+
+    "autoload" : {
+        "psr-4" : {"models\\" : "models",
+                    "controllers\\" : "controllers"}
+    }
+}
