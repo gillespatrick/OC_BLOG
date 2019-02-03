@@ -4,13 +4,10 @@
 	include_once "system/libs/DModel.php";
 	include_once "system/libs/Database.php";
 	include_once "system/libs/Load.php";
-	include_once "system/libs/Main.php";
+	//include_once "system/libs/Main.php";
 	include_once "system/libs/Dcontroller.php";
 
-	//$main = new Main();
-
-	//echo "Welcome to my mvc projet from index page";
-
+	
 	$url = isset($_GET['url']) ? $_GET['url'] : Null;
 
 		if ($url != Null) {

@@ -4,7 +4,7 @@
 
 
 
-<h1>WELCOME TO MVC PROJECT</h1>
+<h1>WELCOME TO MY BLOG</h1>
 
 
 

@@ -8,6 +8,6 @@
 		
 		function __construct(){
 
-			//echo "Welcome to my mvc projet from Main class";
+			
 		}
 	}
