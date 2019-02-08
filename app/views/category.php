@@ -10,7 +10,7 @@
 <?php
 
   foreach ($cat as $key => $value) {
-    echo $value['title']."<br/>"; 
+    echo $value['title']."<br/>"; }
 
 ?>
 

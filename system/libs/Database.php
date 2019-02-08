@@ -7,13 +7,21 @@
  */
 	class Database extends PDO {
 	
-	public function __construct()
+	public function __construct($dns,$user,$pass)
 	{
-		$dns = 'mysql:dbname=oc_blog;host=localhost';
-		$user = 'gilles';
-		$pass = 'gillespatr9ck';
-
 		parent::__construct($dns,$user,$pass);
 
 	}
+
+
+	public function select($table){
+
+		 $sql ="select * from $table";
+       	 $stmt = $this -> prepare($sql);
+       	 $stmt -> execute();
+       	 return $stmt -> fetchAll(); 
+
+	}
+
+
 }

@@ -10,6 +10,12 @@ class DModel
 	protected $db = array();
 	public  function __construct()
 	{
-		$this -> db = new Database();
+
+        $dns = 'mysql:dbname=oc_blog;host=localhost';
+        $user = 'gilles';
+        $pass = 'gillespatr9ck';
+
+
+		$this -> db = new Database($dns,$user,$pass);
 	}
 }
