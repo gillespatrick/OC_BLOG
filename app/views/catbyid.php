@@ -4,7 +4,7 @@
 
 <div class = "content">
 
-<h1>CATEGORY LIST</h1><HR/>
+<h1>CATEGORY BY ID</h1><HR/>
 
 <?php
 

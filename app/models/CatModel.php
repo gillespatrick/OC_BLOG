@@ -14,21 +14,38 @@
 
 
     public function catList($table){
-
-        return $this -> db -> select($table);
+        $sql = "select * from $table";
+        return $this -> db -> select( $sql);
         
     }
 
     public function catById($table,$id){
 
         $sql = "select * from $table where id=:id";
-        $stmt = $this -> db -> prepare($sql);
-        $stmt -> bindParam(':id',$id);
-        $stmt -> execute();
-        return $stmt -> fetchAll();
+        $data = array(":id" => $id);
+        return $this -> db -> select($sql,$data);
+        }
+
+
+    public function  insertCat($table, $data){
+
+       return  $this -> db -> insert($table, $data);
 
     }
 
 
 
+
+
+        /**
+         * Set the value of sql
+         *
+         * @return  self
+         */ 
+        public function setSql($sql)
+        {
+                $this->sql = $sql;
+
+                return $this;
+        }
  }
