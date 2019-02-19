@@ -1,6 +1,6 @@
-<?php
+ <?php
 
-ini_set('memory_limit', '1024M');
+
 
 
 
@@ -28,35 +28,21 @@ ini_set('memory_limit', '1024M');
 	}
 
 	public function insert($table, $data){
-		$keys = implode(",", array_keys($data));
-		//$values = ":" .implode(", :", array_keys($data));
-		$values = "";
-
-		for ($i=0; $i < count ($data);$i++ ) { 
-			
-			if ($i+1 >= count($data)){
-				$values = $values ."?";
-			}else{
-				$values = $values ."?,";
-			}
-
-			
-		}
-
 		
+		$keys = implode(array_keys($data));
+		$values = ":" .implode(", :",array_keys($data));
 
-		
-		$sql = "insert into $table($keys) values($values)"; 
+		$sql = "INSERT INTO $table($keys) VALUES ($values)"; 
 		$stmt = $this -> prepare($sql);
 
-		for ($i=0; $i < count($data); $i++) { 
-			$stmt -> bindParam($i+1, $data[$i]);
-		}
-		
-		
-		
+		foreach ($data as $key => $value) {
+			$stmt -> bindParam(":$key",$value);
+		}	
+		$stmt -> bindParam(":title",$title);
 		return $stmt -> execute();
-	}
+
+		
+	} 
 
 
 }

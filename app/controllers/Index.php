@@ -37,7 +37,7 @@ class Index extends Dcontroller {
     public function catById(){
       $data = array();
       $table = 'category';
-      $id = 2;
+      $id = 10;
      $catModel = $this->load->model("CatModel");
      $data['catbyid'] = $catModel -> catByid($table,$id);
      $this->load->view("catbyid",$data);  
