@@ -38,11 +38,29 @@
 		foreach ($data as $key => $value) {
 			$stmt -> bindParam(":$key",$value);
 		}	
-	//	$stmt -> bindParam(":title",$title);
 		return $stmt -> execute();
 
 		
 	} 
+
+
+	public function update($table, $data, $cond){
+
+		$UpdateKeys = null;
+		foreach ($data as $key => $value) {
+			$UpdateKeys .= "$key=:$key,";
+		}
+
+		$UpdateKeys = rtrim($UpdateKeys, ',');
+
+		$sql = "UPDATE $table SET $UpdateKeys WHERE $cond";
+		$stmt = $this ->prepare($sql);
+		foreach ($data as $key => $value) {
+			$stmt -> bindParam(":$key",$value);
+		}	
+		return $stmt -> execute();	
+
+	}
 
 
 }
