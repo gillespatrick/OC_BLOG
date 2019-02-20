@@ -29,7 +29,7 @@
 
 	public function insert($table, $data){
 		
-		$keys = implode(array_keys($data));
+		$keys = implode(",", array_keys($data));
 		$values = ":" .implode(", :",array_keys($data));
 
 		$sql = "INSERT INTO $table($keys) VALUES ($values)"; 
@@ -38,7 +38,7 @@
 		foreach ($data as $key => $value) {
 			$stmt -> bindParam(":$key",$value);
 		}	
-		$stmt -> bindParam(":title",$title);
+	//	$stmt -> bindParam(":title",$title);
 		return $stmt -> execute();
 
 		

@@ -37,15 +37,5 @@
 
 
 
-        /**
-         * Set the value of sql
-         *
-         * @return  self
-         */ 
-        public function setSql($sql)
-        {
-                $this->sql = $sql;
-
-                return $this;
-        }
+        
  }

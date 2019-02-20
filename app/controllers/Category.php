@@ -28,7 +28,7 @@
       public function catById(){
         $data = array();
         $table = 'category';
-        $id = 10;
+        $id = 40;
        $catModel = $this->load->model("CatModel");
        $data['catbyid'] = $catModel -> catByid($table,$id);
        $this->load->view("catbyid",$data);  
