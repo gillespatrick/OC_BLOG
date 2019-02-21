@@ -63,4 +63,12 @@
 	}
 
 
+	public function delete($table,$cond,$limit = 1){
+
+		$sql = "DELETE FROM $table where $cond LIMIT $limit ";
+		return $this -> exec($sql);
+
+	}
+
+
 }
