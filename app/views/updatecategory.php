@@ -23,14 +23,23 @@
           <div class="col-lg-8 mx-auto">
             <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
             <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-            <form  action="http://localhost/OC_BLOG/index.php?url=Category/InsertCategory" method="post">
+            <form  action="http://localhost/OC_BLOG/index.php?url=Category/updateCat" method="post">
               
-              
+                <center>
+                    <?php 
+                        if(isset($msg)){
+                        echo "<span style = 'color:green; font-weight:bold'>".$msg."</span>";
+                        }
+            
+                    ?>
+                </center>
 
               <div class="control-group">
               <?php                
                     foreach ($catbyid as $value) {
                 ?>
+
+<input class="form-control" name="id" type="hidden" placeholder="Name" required="1"  value="<?php echo $value['id']?>">
 
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                   <label>Name</label>

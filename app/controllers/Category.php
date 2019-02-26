@@ -82,15 +82,28 @@ use Dcontroller;
       public function updateCat(){
 
         $table = 'category';
-        $cond = "id = 1";
+        $id = $_POST['id'];
+        $name = $_POST['name'];
+        $title = $_POST['title'];
 
+        $cond = "id = $id";
         $data = array(
-  
-          'name' => 'Cool',
-          'title' => 'Super'
+          'name' => $name,
+          'title' => $title
         );
         $catModel = $this->load->model("CatModel");
-        $catModel -> catUpdate($table, $data, $cond);
+        $result = $catModel -> catUpdate($table, $data, $cond);
+
+        $msg = array();
+  
+        if ($result ==1) {
+          $msg['msg'] = "Updated with success...!";
+        } else {
+          $msg['msg'] = "Update was not a success";
+        }
+        $this->load->view("updatecategory",$msg);
+
+
 
       }
 
