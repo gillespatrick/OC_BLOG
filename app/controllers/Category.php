@@ -1,4 +1,6 @@
 <?php
+
+use Dcontroller;
 /**
  * Category Controller
  */
@@ -38,8 +40,6 @@
       public function addCategory(){
   
         $this->load->view("addcategory");
-  
-  
       }
   
   
@@ -70,13 +70,20 @@
         
       }
 
+      public function updateCategory(){
+        $data = array();
+        $table = 'category';
+        $id = 1;
+       $catModel = $this->load->model("CatModel");
+       $data['catbyid'] = $catModel -> catByid($table,$id);
+       $this->load->view("updatecategory",$data); 
+      }
 
       public function updateCat(){
 
         $table = 'category';
-        $cond = "id = 41";
+        $cond = "id = 1";
 
-  
         $data = array(
   
           'name' => 'Cool',
@@ -91,7 +98,7 @@
       public function deleteCatById(){
 
         $table ='category';
-        $cond = "id = 48";
+        $cond = "id = 2";
         $catModel = $this->load->model("CatModel");
         $catModel -> delCatById($table,$cond);
     }
