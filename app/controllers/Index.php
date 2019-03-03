@@ -20,11 +20,14 @@ class Index extends Dcontroller {
 
     }
 
-     public function Blog(){
 
-     $this->load->view("blog");
+    public function Blog(){
 
-    }
+      $this->load->view("blog");
+  
+     }
+
+    
 
 
 
