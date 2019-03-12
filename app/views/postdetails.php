@@ -38,4 +38,4 @@
 
 
 
-<?php include 'app/views/inc/footer.'; ?> 
+<?php include 'app/views/inc/footer.php'; ?> 

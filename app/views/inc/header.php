@@ -51,7 +51,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="http://localhost/OC_BLOG/index.php?url=Post/Blog">My Blog</a>
+                        <a href="http://localhost/OC_BLOG/index.php?url=Post/postList">My Blog</a>
                     </li>
                     <li class="page-scroll">
                         <a href="http://localhost/OC_BLOG/#portfolio">My Portfolio</a>

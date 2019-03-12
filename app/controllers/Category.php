@@ -117,6 +117,12 @@ use Dcontroller;
     }
 
 
+    public function postByCat(){
+      $this->load->view("postbycat");
+
+    }
+
+
   
   
 
