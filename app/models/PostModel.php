@@ -30,5 +30,15 @@
   
     }
 
+
+    public function getPostByCat($tablePost, $tableCat,$id){
+
+        $sql = "select $tablePost.*, $tableCat.name from $tablePost
+        inner join $tableCat
+        on $tablePost.categoryId = $tableCat.id
+        where $tableCat.id = $id";
+        return $this -> db -> select( $sql);
+    }
+
    
  }

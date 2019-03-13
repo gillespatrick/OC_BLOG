@@ -37,6 +37,19 @@ public function postDetail($id){
 }
 
 
+public function postByCat($id){
+
+  $data = array();
+  $tablePost = 'post';
+  $tableCat = 'category';
+ $postModel = $this->load->model("PostModel");
+ $data['getcat'] = $postModel -> getPostByCat($tablePost, $tableCat,$id);
+
+      $this->load->view("postbycat",$data);
+
+    }
+
+
 
 
 

@@ -19,7 +19,7 @@
     <div class = "details">
         <div class="title">
             <h2> <?= $value['title']?> </h2>
-                <p>Category: <a href="#"><?= $value['name']?></a> </p> 
+                <p>Category: <a href="http://localhost/OC_BLOG/index.php?url=Post/postByCat/<?= $value['id']?>"><?= $value['name']?></a> </p> 
         </div>
 
         <div class="description">
