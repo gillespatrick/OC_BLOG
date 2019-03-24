@@ -39,7 +39,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <small>Copyright &copy; Gilles Patrick 2018 - <a href= "admin_connect.php" class="admin-link"  > Administrator </a>
+                        <small>Copyright &copy; Gilles Patrick 2018 - <a href= "http://localhost/OC_BLOG/index.php?url=Admin/login" class="admin-link"  > Administrator </a>
                     </div>
                 </div>
             </div>
