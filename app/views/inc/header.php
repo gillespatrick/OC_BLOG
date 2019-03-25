@@ -63,7 +63,7 @@
                         <a href="http://localhost/OC_BLOG/#contact">Contact</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#sign_in">sign in</a>
+                        <a href="http://localhost/OC_BLOG/index.php?url=Login/login">sign in</a>
                     </li>
                 </ul>
             </div>

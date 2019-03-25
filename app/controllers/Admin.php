@@ -13,10 +13,7 @@ use Dcontroller;
     }
 
 
-public function login(){
-  
-    $this->load->view("login");
-  }
+
 
 
   public function forg_password(){
@@ -31,6 +28,9 @@ public function login(){
     $this -> load -> view("register");
 
   }
+
+
+
 
 
 
