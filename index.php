@@ -8,23 +8,28 @@ spl_autoload_register(function($class){
 		
 	$url = isset($_GET['url']) ? $_GET['url'] : Null;
 
+	
+
 		if ($url != Null) {
 
 			$url = rtrim($url,'/');
 			$url = explode('/', filter_var($url,FILTER_SANITIZE_URL));
+
+			
 
 		} else {
 			unset($url);
 		}
 		
 	
-	
+		
 	
 	//url controller
 	if (isset($url[0])) {
 		include 'app/controllers/'.$url[0].'.php';
 		$ctlr = new $url[0]();
-
+		
+		
 
 			//url parameters
 			if (isset($url[2])) {
@@ -38,6 +43,9 @@ spl_autoload_register(function($class){
 				//url method
 				if (isset($url[1])) {
 					$str = $url[1];
+
+					
+
 					$ctlr -> $str();
 					//$ctlr -> $url[1]();
 				} else {

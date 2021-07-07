@@ -1,4 +1,6 @@
 <?php
+
+use Dcontroller;
 /**
  * Category Controller
  */
@@ -38,8 +40,6 @@
       public function addCategory(){
   
         $this->load->view("addcategory");
-  
-  
       }
   
   
@@ -70,20 +70,40 @@
         
       }
 
+      public function updateCategory(){
+        $data = array();
+        $table = 'category';
+        $id = 1;
+       $catModel = $this->load->model("CatModel");
+       $data['catbyid'] = $catModel -> catByid($table,$id);
+       $this->load->view("updatecategory",$data); 
+      }
 
       public function updateCat(){
 
         $table = 'category';
-        $cond = "id = 41";
+        $id = $_POST['id'];
+        $name = $_POST['name'];
+        $title = $_POST['title'];
 
-  
+        $cond = "id = $id";
         $data = array(
-  
-          'name' => 'Cool',
-          'title' => 'Super'
+          'name' => $name,
+          'title' => $title
         );
         $catModel = $this->load->model("CatModel");
-        $catModel -> catUpdate($table, $data, $cond);
+        $result = $catModel -> catUpdate($table, $data, $cond);
+
+        $msg = array();
+  
+        if ($result ==1) {
+          $msg['msg'] = "Updated with success...!";
+        } else {
+          $msg['msg'] = "Update was not a success";
+        }
+        $this->load->view("updatecategory",$msg);
+
+
 
       }
 
@@ -91,7 +111,7 @@
       public function deleteCatById(){
 
         $table ='category';
-        $cond = "id = 48";
+        $cond = "id = 2";
         $catModel = $this->load->model("CatModel");
         $catModel -> delCatById($table,$cond);
     }
